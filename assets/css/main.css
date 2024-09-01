@@ -1,0 +1,38 @@
+/* Common code start */
+:root{
+    --light-color: #fff;
+    --dark-color: #000;
+    --primary-color: rgb(0, 128, 128);
+}
+
+.title{
+    color: var(--primary-color);
+    & h1{
+        color: var(--primary-color);
+    }
+}
+
+#navbar .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--light-color);
+    background: var(--primary-color);
+}
+.navbar-brand{
+    color: var(--primary-color);
+}
+.nav-link {
+    color: var(--dark-color);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0px 20px;
+
+    &:hover{
+        color: var(--primary-color);
+    }
+}
+
+#footer{
+    background: linear-gradient(rgba(0, 128, 128, .6), rgba(0, 128, 128));
+}
+/* Common code end */
+
+/* Homepage Start */
+/* Homepage End */
